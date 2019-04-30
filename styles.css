@@ -1,0 +1,41 @@
+* {
+    background-color: #E0FFFF;
+    text-align: center;
+}
+
+header h1 {
+    color: #191970;
+}
+
+.contenido {
+    float:left;
+    margin-left: 25%;
+    width: 50%;
+    clear: both;
+    border: 2px #000000 solid;
+    margin-bottom: 10px;
+}
+
+.contenido input {
+    background-color: white;
+    margin-top: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.submit {
+    margin-bottom: 2px;
+}
+
+.salida {
+    margin-bottom: 2px;
+}
+
+#listado {
+    float:left;
+    margin-left: 25%;
+    width: 50%;
+    clear: both;
+    border: 2px #000000 solid;
+    margin-bottom: 10px;
+}
