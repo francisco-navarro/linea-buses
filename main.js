@@ -26,11 +26,13 @@ function respuesta() {
     
         // Cojo el elemento donde voy a mostrar los datos
         seccion = document.getElementById('respuesta');
-
+        seccion.innerHTML = '';
+        
         for (i in datosString) {
             var nodo = document.createElement("p");
             var nodoTexto = document.createTextNode(datosString[i].nombre + '  ' + datosString[i].profesion);
             nodo.appendChild(nodoTexto);
+            seccion.appendChild(nodo);
         }
     }
 
