@@ -21,9 +21,8 @@ function consultar() {
 
 function respuesta() {
     // Si me ha mandado los datos y la conexion ha sido buena
-    if (objetoAjax.readystate==4 && objetoAjax.status ==200) {
-        alert(objetoAjax.responseText);
-        var datosString = Json.parse(objetoAjax.responseText);
+    if (objetoAjax.readyState==4 && objetoAjax.status ==200) {
+        var datosString = JSON.parse(objetoAjax.responseText);
     }
 
     // Cojo el elemento donde voy a mostrar los datos
