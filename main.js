@@ -23,15 +23,15 @@ function respuesta() {
     // Si me ha mandado los datos y la conexion ha sido buena
     if (objetoAjax.readyState==4 && objetoAjax.status ==200) {
         var datosString = JSON.parse(objetoAjax.responseText);
-    }
+    
+        // Cojo el elemento donde voy a mostrar los datos
+        seccion = document.getElementById('respuesta');
 
-    // Cojo el elemento donde voy a mostrar los datos
-    seccion = document.getElementById('respuesta');
-
-    for (i in datosString) {
-        var nodo = document.createElement("p");
-        var nodoTexto = document.createTextNode(datosString[i].profesion);
-        nodo.appendChild(nodoTexto);
+        for (i in datosString) {
+            var nodo = document.createElement("p");
+            var nodoTexto = document.createTextNode(datosString[i].nombre + '  ' + datosString[i].profesion);
+            nodo.appendChild(nodoTexto);
+        }
     }
 
 }
