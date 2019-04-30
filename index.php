@@ -18,7 +18,7 @@
                     <label>Introduce Profesión</label><br>
                     <input type="text" name="profesion" id="profesion" maxlength="9"
                         autocomplete="off" autofocus/><br>
-                    <input type="submit" value="Consultar" class="submit"
+                    <input type="button" value="Consultar" class="submit"
                         action="consultar();" /><br>
                 </form>
             </div>
