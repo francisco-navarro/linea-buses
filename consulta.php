@@ -7,7 +7,7 @@ $profesion = $_GET['profesion'];
 $sql = "SELECT * FROM empleados WHERE profesion = '$profesion' ";
 
 
-if ($resul = $mysqli->query($consulta)) {
+if ($resul = $conexion->query($sql)) {
 
     $registros = array();
     
