@@ -10,6 +10,8 @@ if ($error != null) {
     echo "<p>Error $error conectando a la base de datos: 
     $conexion->connect_error</p>";
     exit();
+} else {
+    echo "Conexion exitosa";    
 }
 
 mysqli_set_charset($conexion,"utf8");
