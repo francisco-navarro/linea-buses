@@ -13,7 +13,7 @@ function AJAXcrearObjeto() {
 
 function consultar() {
     objetoAjax = AJAXcrearObjeto();
-    objetoAjax.open('GET', 'consulta.php?profesion'+profesion, true);
+    objetoAjax.open('GET', 'consulta.php?profesion'+ profesion.value, true);
     objetoAjax.send();
     // Al recibir un evento del servidor, llamo a la función respuesta
     objetoAjax.onreadystatechange=respuesta;

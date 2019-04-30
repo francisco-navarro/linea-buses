@@ -19,7 +19,7 @@
                     <input type="text" name="profesion" id="profesion" maxlength="9"
                         autocomplete="off" autofocus/><br>
                     <input type="button" value="Consultar" class="submit"
-                        action="consultar();" /><br>
+                        onclick="consultar();" /><br>
                 </form>
             </div>
             <div id="respuesta">
